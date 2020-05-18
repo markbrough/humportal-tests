@@ -7,7 +7,7 @@ class TestHome:
         driver.get("https://www.humportal.org/")
         if not "Humanitarian" in driver.title:
             raise Exception("Unable to load humportal page!")
-        time.sleep(2)
+        time.sleep(5)
         elem = driver.find_element_by_css_selector("h4[signatorytype='gb']")
         assert int(elem.text) > 0
         print("Found {} signatories".format(elem.text))
@@ -17,7 +17,7 @@ class TestHome:
         driver.get("https://www.humportal.org/")
         if not "Humanitarian" in driver.title:
             raise Exception("Unable to load humportal page!")
-        time.sleep(2)
+        time.sleep(5)
         elem = driver.find_element_by_css_selector("h4[signatorytype='iati']")
         assert int(elem.text) > 0
         print("Found {} signatories".format(elem.text))
@@ -27,7 +27,7 @@ class TestHome:
         driver.get("https://www.humportal.org/")
         if not "Humanitarian" in driver.title:
             raise Exception("Unable to load humportal page!")
-        time.sleep(2)
+        time.sleep(5)
         elem = driver.find_element_by_css_selector("h4[signatorytype='humanitarian']")
         assert int(elem.text) > 0
         print("Found {} signatories".format(elem.text))
