@@ -1,0 +1,5 @@
+.DS_Store
+pyenv
+__pycache__
+.pytest_cache
+*.sublime-*
